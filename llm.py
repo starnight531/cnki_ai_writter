@@ -1,11 +1,10 @@
 import openai
-
 class LLM:
     def __init__(self, base_url = None, api_key = None):
         if not base_url:
-            base_url = "http://127.0.0.1:10416/v1"
+            base_url = "https://api.deepseek.com/v1"
         if not api_key:
-            api_key = "any ok"
+            api_key = "sk-8cf9cf3f165442afa05972d6103d2e93"
         self.client = openai.OpenAI(
             base_url=base_url,
             api_key=api_key,
